@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #dc2626;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #dc2626;
+}
+
+/* Ajustar el tamaño del logo en la navbar */
+.navbar .logo img {
+  width: 150px; /* Cambia este valor según el diseño */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav a {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #dc2626;
+}
+
+/* Estilo para el enlace activo en el menú */
+.navbar ul li a.active {
+  color: #007bff;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #1e293b, #0f172a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primario, .btn-secundario {
+  background: #dc2626;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.btn-primario:hover,
+.btn-secundario:hover {
+  background: #b91c1c;
+}
+
+.seccion {
+  padding: 80px 20px;
+  text-align: center;
+  background: #1e293b;
+}
+
+.seccion.oscuro {
+  background: #0f172a;
+}
+
+.seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.imagenes-nosotros {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imagenes-nosotros img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Estilo general para la sección Nosotros */
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.contenido-nosotros {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.contenido-nosotros h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contenido-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.imagen-nosotros {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.imagen-nosotros img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+footer {
+  background: #0f172a;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+}

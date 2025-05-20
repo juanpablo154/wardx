@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosotros | War Record</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+  <script>
+    // Load the navbar.html content into the placeholder
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-container">
+      <div class="nosotros-texto">
+        <h1>Conoce Nuestra Historia</h1>
+        <p>
+          En <strong>War Record</strong>,somos un negocio con 22 años de trayectoria en Alta Gracia
+        </p>
+        <p>
+          Nuestro equipo está comprometido con ofrecer una experiencia única, combinando lo mejor del pasado con las tendencias actuales. Creemos en la importancia de preservar la historia tecnológica y en la magia de revivir los momentos icónicos de los videojuegos.
+        </p>
+        <p>
+          en Ward Record encontras  confianza,garantia,responsabilidad y calidad en todos nuestros productos.
+        </p>
+      </div>
+      <div class="nosotros-imagen">
+        <img src="local.png" alt="Equipo de War Record">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 War Record. Todos los derechos reservados.</p>
+    <p>Hecho con 🎮 desde Alta Gracia, Córdoba</p>
+  </footer>
+
+</body>
+</html>

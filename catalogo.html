@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo | War Record</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+  <!-- Contenedor para la navbar -->
+  <div id="navbar"></div>
+
+  <section class="hero-catalogo">
+    <div class="hero-texto">
+      <h1>Explora Nuestro Catálogo</h1>
+      <p>Encuentra los mejores productos retro y tecnológicos en un solo lugar.</p>
+    </div>
+  </section>
+  
+
+  <section class="catalogo">
+    <div class="filtros">
+      <h2>Filtrar por</h2>
+      <form>
+        <label for="categoria">Categoría:</label>
+        <select id="categoria">
+          <option value="todos">Todos</option>
+          <option value="impresion-3d">Impresión 3D</option>
+          <option value="juegos-play4">Juegos de Play 4</option>
+          <option value="peliculas">Películas</option>
+          <option value="servicios">servicios</option>
+          <option value="accesorios">accesorios</option>
+          <option value="auriculares">auriculares</option>
+          <option value="accesorios-telefonos">accesorios-telefonos</option>
+          <option value="audio">audio</option>
+          <option value="accesorios-pc">accesorios-pc</option>
+          <option value="cables">cables</option>
+          <option value="juegos-play5">juegos-play5</option>
+        
+       
+       
+
+        <label for="precio">Rango de Precio:</label>
+        <input type="number" id="precio-min" placeholder="Mínimo">
+        <input type="number" id="precio-max" placeholder="Máximo">
+
+        <button type="submit" class="btn-primario">Aplicar Filtros</button>
+      </form>
+    </div>
+
+    <div class="productos">
+      <!-- Productos de la categoría "Todos" -->
+      <div class="producto categoria-todos">
+        <img src="imagenes/consola.png" alt="Consola Retro">
+        <div class="contenido">
+          <h3>Consola Retro</h3>
+          <p>$120.00</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+      <!-- Productos de la categoría "Impresión 3D" -->
+      <div class="producto categoria-impresion-3d">
+        <img src="imagenes/impresion3d1.png" alt="Figura 3D">
+        <div class="contenido">
+          <h3>Figura 3D</h3>
+          <p>$50.00</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+
+     
+    
+      </div>
+
+      
+
+    
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/3547609741" class="whatsapp-link" target="_blank">
+    <img src="./imagenes/whasapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 70px; height: 70px;">
+  </a>
+
+  <!-- Contenedor para el footer -->
+  <div id="footer"></div>
+
+  <script src="catalogo.js"></script>
+  <script src="insert.js"></script>
+</body>
+</html>
